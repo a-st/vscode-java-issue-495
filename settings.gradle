@@ -1,0 +1,11 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'vscode-java-issue-495'
+
+include 'module_a'
+include 'module_b'
+include 'app_a'

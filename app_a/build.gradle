@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+    id "org.springframework.boot"
+}
+
+dependencies {
+    testImplementation project (':module_a').sourceSets.test.output
+    testImplementation project (':module_b').sourceSets.test.output
+
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.7.5'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.7.5'
+}
